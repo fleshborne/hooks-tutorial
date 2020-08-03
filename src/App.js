@@ -6,7 +6,6 @@ export default function App() {
   // cart item, name of state, setCart changes that state
   // eslint-disable-next-line no-undef
   const [cartItems, setCartItems] = useState([]);
-
   return (
     <div className='App'>
       <header className='App-header'>
@@ -15,6 +14,7 @@ export default function App() {
         <button
           onClick={() => {
             setCartItems([...cartItems, 'apple']);
+            console.log(cartItems);
           }}
         >
           Add to Cart
